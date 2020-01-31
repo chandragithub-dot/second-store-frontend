@@ -1,0 +1,41 @@
+export class AppConst {
+    public static serverPath = 'http://127.0.0.1:8181';
+
+    public static indiaStates = {
+        "AN": "Andaman and Nicobar Islands",
+		"AP": "Andhra Pradesh",
+		"AR": "Arunachal Pradesh",
+		"AS": "Assam",
+		"BR": "Bihar",
+		"CG": "Chhattisgarh",
+		"CH": "Chandigarh",
+		"DD": "Daman and Diu",
+		"DH": "Dadra and Nagar Haveli",
+		"DL": "Delhi",
+		"GA": "Goa",
+		"GJ": "Gujarat",
+		"HR": "Haryana",
+		"HP": "Himachal Pradesh",
+		"JK": "Jammu and Kashmir",
+		"JH": "Jharkhand",
+		"KA": "Karnataka",
+		"KL": "Kerala",
+		"LD": "Lakshadweep",
+		"MP": "Madhya Pradesh",
+		"MH": "Maharashtra",
+		"MN": "Manipur",
+		"ML": "Meghalaya",
+		"MZ": "Mizoram",
+		"NL": "Nagaland",
+		"OR": "Orissa",
+		"PB": "Punjab",
+		"PY": "Pondicherry",
+		"RJ": "Rajasthan",
+		"SK": "Sikkim",
+		"TN": "Tamil Nadu",
+		"TR": "Tripura",
+		"UK": "Uttarakhand",
+		"UP": "Uttar Pradesh",
+		"WB": "West Bengal"
+	}
+}

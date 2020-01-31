@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand pointer" routerLink="/home"><h1><i class="fa fa-fw fa-recycle" style="color: yellow;"></i><strong>-STORE</strong></h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link hover" routerLink="/productsList"><h4><strong>PRODUCTS</strong></h4></a>
+            </li>
+        </ul>
+
+
+        <form (ngSubmit)="onSearchByTitle()" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 mat-elevation-z8" type="search" name="SearchByTitle" [(ngModel)]="keyword" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success hover my-2 my-sm-0 mat-elevation-z8" type="submit"><i class="fa fa-fw fa-search" style="color: white;"></i>Search</button>
+        </form>
+        
+
+        <div *ngIf="!loggedIn">
+            <a routerLink="/myAccount" class="btn btn-danger hover mat-elevation-z8" type="submit">LOGIN/REGISTER</a>
+        </div>
+        <div *ngIf="!loggedIn" class="b1">
+            <a routerLink="/shoppingCart" class="btn btn-warning hover mat-elevation-z8" type="submit">CART</a>
+        </div>
+        <div *ngIf="!loggedIn" class="b2">
+            <a routerLink="/myProfile" class="btn btn-warning hover mat-elevation-z8" type="submit">PROFILE</a>
+        </div>
+        <div *ngIf="loggedIn">
+            <a class="btn btn-danger hover mat-elevation-z8" type="submit" (click)="logout()">LOGOUT</a>
+        </div>
+        
+
+        
+    </div>
+</nav>
+

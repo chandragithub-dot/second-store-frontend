@@ -1,0 +1,23 @@
+/* .color1{
+    color: yellow;
+} */
+
+.navbar-brand{
+    color: yellow;
+}
+
+.nav-link{
+    color: whitesmoke;
+    margin-left: 50px;
+}
+.btn.btn-danger{
+    margin-left: 30px;
+}
+
+.b1{
+    margin-left: 10px;
+}
+
+.b2{
+    margin-left: 10px;
+}
